@@ -35,7 +35,7 @@ This is a hex value, it is a positional numbering system that allows us to repre
 
 We also have the ending anchor.
 The search is wrapped in the closing parenthesis and then followed by a dollar sign `“$”` 
-The `“$”` means this is the end of the statement and it is how we close a regex search.   Thats an easy one, you're welcome. 
+The `“$”` means this is the end of the statement and it is how we close a regex search.   That's an easy one, you're welcome. 
 
  If we wanted to search for a specific hex value, we could limit the characters we ask the regex to search for but this is used to search for hex values in general and can be tailored by the user for their purposes.
 
@@ -49,8 +49,11 @@ The second part of the hex value expression is wrapped in parenthesis “()”. 
 Everything contained inside these parentheses are interpreted as a group of characters and not handled individually.  In this case it is the end of the expression.
 
 ### Bracket Expressions
-Square brackets, or bracket expressions, `“[]”` match any single character from within the bracketed list.
- For  `[a-f0-9]` it means that our search will find any string that contains “a,b,c,d,e,f” and “0,1,2,3,4,5,6,7,8,9” this is the big one kids!  This is a result of the characters being separated by the hyphen which is not read as a character but is a part of the bracket expression syntax.  We can see that immediately following the square brackets we have curly braces `“{}”` with a number inside `{6}`.  This part of the expression is meant to limit the quantity of characters in the search.  So, since we are looking for characters a-f and 0-9 we are also limiting the search to match a string of 6 characters.  
+Square brackets, or bracket expressions, This is a bog one kids, buckel up!  
+`“[]”` match any single character from within the bracketed list.
+ For  `[a-f0-9]` it means that our search will find any string that contains “a,b,c,d,e,f” and “0,1,2,3,4,5,6,7,8,9”   Because the characters are being separated by the hyphen which is not read as a character but is a part of the bracket expression syntax. 
+ 
+  Immediately following the square brackets we have curly braces `“{}”` with a number inside `{6}`.  This part of the expression is meant to limit the quantity of characters in the search.  So, since we are looking for characters a-f and 0-9 we are also limiting the search to match a string of 6 characters.  
 
 
 ### OR Operator
